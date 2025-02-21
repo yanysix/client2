@@ -91,3 +91,10 @@ function checkColumnLock() {
         alert("Первый столбец заблокирован. Освободите место во втором столбце.");
     }
 }
+function addToCart(cardId) {
+    // Логика добавления в корзину
+}
+
+function deleteCard(cardId) {
+    // Логика удаления из корзины
+}
