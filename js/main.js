@@ -61,3 +61,19 @@ function createCard(title, items) {
 
     return cardDiv;
 }
+function toggleItemCompletion(card, index) {
+    const checkboxes = card.querySelectorAll("input[type='checkbox']");
+    const completedCount = Array.from(checkboxes).filter(cb => cb.checked).length;
+    const totalItems = checkboxes.length;
+
+    if (completedCount >= totalItems * 0.5 && card.parentElement.id === "column1") {
+        moveCardToColumn(card, "column2");
+    } else if (completedCount === totalItems && card.parentElement.id === "column2") {
+        moveCardToColumn(card, "column3");
+    }
+}
+
+function moveCardToColumn(card, newColumnId) {
+    const newColumn = document.getElementById(newColumnId);
+    newColumn.appendChild(card);
+}
