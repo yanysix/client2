@@ -42,3 +42,19 @@ h1 {
     flex: 1;
     min-width: 300px;
 }
+.card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.card .header {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card .item {
+    margin-bottom: 5px;
+}
