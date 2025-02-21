@@ -86,3 +86,8 @@ function saveData() {
 function updateUI() {
     // Логика обновления интерфейса
 }
+function checkColumnLock() {
+    if (cardsData.filter(card => card.column === 2).length >= 5) {
+        alert("Первый столбец заблокирован. Освободите место во втором столбце.");
+    }
+}
