@@ -28,3 +28,17 @@ h1 {
     border-radius: 5px;
     cursor: pointer;
 }
+.columns {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.column {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 300px;
+}
