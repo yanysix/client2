@@ -77,3 +77,12 @@ function moveCardToColumn(card, newColumnId) {
     const newColumn = document.getElementById(newColumnId);
     newColumn.appendChild(card);
 }
+let cardsData = JSON.parse(localStorage.getItem("cards")) || [];
+
+function saveData() {
+    localStorage.setItem("cards", JSON.stringify(cardsData));
+}
+
+function updateUI() {
+    // Логика обновления интерфейса
+}
